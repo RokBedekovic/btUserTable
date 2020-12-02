@@ -1,0 +1,15 @@
+.box{
+    margin: auto;
+    padding-left: 400px;
+    padding-right: 400px;
+}
+
+.box2{
+    
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.delete{
+    float: left;
+}

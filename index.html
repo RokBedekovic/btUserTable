@@ -1,0 +1,78 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Data Table</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    </head>
+
+    <body class="box">
+        <h1>User Table</h1>
+        
+        <div>
+            <table id="table_id" class="display">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Surname</th>
+                        <th>Date of birth</th>
+                        <th>Active</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   
+                </tbody>
+            </table>
+        </div>
+
+        <button type="click" class="btn btn-danger delete mt-3" id="btnDelete" value="2">Delete</button>
+
+        <form class="box2 mt-3" id="myForm">
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" class="form-control" id="name" name="name">
+            </div>
+            
+            <div class="form-group">
+                <label>Surname</label>
+                <input type="text" class="form-control" id="surname" name="surname">
+            </div>
+
+            <div class="form-group">
+                <label>Date of birth</label>
+                <input type="text" class="form-control" id="dateOfBirth" name="dateOfBirth">
+            </div>
+              
+            <div class="form-group">
+                <label class="form-check-label" for="exampleCheck1">Activity</label>
+                <input type="checkbox" id="aktivan" name="aktivan">
+            </div>
+
+            <button type="submit" class="btn btn-info">Submit</button>
+            <button type="click" class="btn btn-info" id="btnEdit" value="1">Edit</button>
+          </form>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" 
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
+            crossorigin="anonymous">
+    </script>
+
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+
+    <script src="postAll.js"></script>
+    <script src="getAll.js"></script>
+    <script src="deleteUser.js"></script>
+    <script src="editUser.js"></script>
+    <script src="jQueryMethods.js"></script>
+
+    </body>
+</html>
